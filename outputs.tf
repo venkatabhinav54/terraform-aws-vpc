@@ -15,7 +15,7 @@ output "database_subnet_ids" {
 }
 
 output "database_subnet_group_name" {
-    value = aws_subnet.database[*].id 
+    value = aws_subnet.group.default.name 
 }
 
 # output "az_info" {
